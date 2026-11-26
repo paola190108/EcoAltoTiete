@@ -22,7 +22,7 @@ function viewRHome(){
     <section class="card" style="padding:0;min-height:450px">
       <div class="row" style="padding:20px 24px"><b class="faint">Histórico:</b><span class="spacer"></span><span class="muted" style="font-size:12.5px">${rows.length} registro${rows.length===1?'':'s'} · atualizado em tempo real</span></div>
       <div class="tbl-wrap"><table class="tbl">
-        <thead><tr><th>Código / Data</th><th>Equipamento &amp; Qtd</th><th>Categoria</th><th>Entregador</th><th>Status</th><th style="text-align:right">Ações</th></tr></thead>
+        <thead><tr><th>Código / Data</th><th>Equipamento &amp; Qtd</th><th>Categoria</th><th>Usuário</th><th>Status</th><th style="text-align:right">Ações</th></tr></thead>
         <tbody>${rows.length?rows.map(s=>`<tr>
           <td><b>${s.codigo}</b><div class="hint" style="margin:0">${s.data} ${s.hora.split(' ')[0]}</div></td>
           <td><b style="color:#7d8a83">${esc(s.equipamento)}</b><div class="hint" style="margin:0">${s.qtd} un (${fmtKg(s.kg)} kg) · ${s.tipo==='ponto'?'Entrega':'Retirada'}</div></td>
@@ -44,7 +44,7 @@ function detailsDrawer(s){
         <div class="row wrap" style="margin-top:8px"><span class="pill cat-${(CATS[s.categoria]||{cls:'branca'}).cls}">Categoria: ${esc(s.categoria)}</span><span>Qtd: ${s.qtd} un</span><span>Peso Est: ${fmtKg(s.kg)} kg</span></div></div>
       <div class="f2" style="gap:0 12px"><div class="box"><span class="lb cap">Data solicitação</span><div class="faint" style="font-weight:600">${s.data} ${s.hora.split(' ')[0]}</div></div>
         <div class="box"><span class="lb cap">Status atual</span><div style="font-weight:600"><span class="st st-${s.status.toLowerCase()}">${s.status}</span></div></div></div>
-      <div class="box"><span class="lb cap">Entregador</span><div>${esc(s.userNome)} · ${esc(s.telefone)}</div><div class="hint">${s.tipo==='ponto'?'Entrega no ponto':'Retirada em: '+esc(s.local)}</div></div>
+      <div class="box"><span class="lb cap">Usuário</span><div>${esc(s.userNome)} · ${esc(s.telefone)}</div><div class="hint">${s.tipo==='ponto'?'Entrega no ponto':'Retirada em: '+esc(s.local)}</div></div>
       <div class="box"><label class="lb cap" for="f-dt_estado">Estado do resíduo:</label><select class="inp" id="f-dt_estado" name="estado"><option value="">Descreva a condição física do material</option>${['Bom','Regular','Danificado'].map(o=>`<option ${s.estado===o?'selected':''}>${o}</option>`).join('')}</select></div>
       <div class="box"><label class="lb cap" for="f-dt_obs">Observações opcionais:</label><input class="inp" id="f-dt_obs" name="obs" placeholder="Digite observações" value="${esc(s.obs)}"></div>
       <div class="row" style="align-items:stretch;gap:14px;justify-content:flex-end">
