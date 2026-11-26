@@ -1,0 +1,26 @@
+.label.lb{display:block;font-size:13px;font-weight:500;margin:0 0 6px;color:var(--text)}
+.lb.strong{font-weight:600}
+.lb.cap{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.field{margin-bottom:14px}
+.inp{width:100%;border:1px solid var(--line-2);background:#fff;border-radius:8px;padding:11px 14px;outline:none;transition:border .15s,box-shadow .15s}
+.inp:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(45,128,87,.14)}
+.inp::placeholder{color:#9aa49e}
+.inp[disabled],.inp[readonly].ro{background:#f1f4f2;color:var(--muted)}
+.inp.soft{background:#f3f6f4}
+.inp.err{border-color:var(--danger);box-shadow:0 0 0 3px rgba(184,58,50,.1)}
+.inp-ic{position:relative}
+.inp-ic>.i.lead{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--muted);width:18px;height:18px;pointer-events:none}
+.inp-ic>.inp{padding-left:40px}
+.inp-ic .eye{position:absolute;right:8px;top:50%;transform:translateY(-50%);border:0;background:none;color:var(--muted);padding:6px;display:flex}
+.inp-ic .eye .i{width:18px;height:18px}
+select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%231f2a24' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;padding-right:38px}
+.check{display:flex;align-items:center;gap:10px;font-size:13px;cursor:pointer;user-select:none}
+.check input{width:18px;height:18px;accent-color:var(--primary);margin:0}
+.hint{font-size:12px;color:var(--muted);margin-top:6px}
+.rules{list-style:none;padding:0;margin:6px 0 0;font-size:12px;color:var(--muted)}
+.rules li{display:flex;align-items:center;gap:6px;margin:2px 0}
+.rules li .i{width:13px;height:13px}
+.rules li.ok{color:var(--primary)} .rules li.bad{color:var(--danger)}
+.otp{display:flex;gap:8px;justify-content:center;margin:22px 0}
+.otp input{width:42px;height:48px;text-align:center;font-size:18px;font-weight:700;border:1.5px solid var(--line-2);border-radius:4px;outline:none;background:#fff}
+.otp input:focus{border-color:var(--forest);border-width:2px}

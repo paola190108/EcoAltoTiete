@@ -1,0 +1,46 @@
+/* Layout: responsividade (breakpoints) e grids das páginas. */
+
+/* responsive */
+.g-home{grid-template-columns:1.85fr 1fr}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:1fr 1fr}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g-sched{grid-template-columns:1.6fr 1fr;align-items:start}
+.g-map{grid-template-columns:1.75fr 1fr;align-items:start}
+.g-prof{grid-template-columns:320px 1fr;align-items:start}
+.g-gh{grid-template-columns:1.6fr 1fr}
+.g-cal{grid-template-columns:1fr 1fr;gap:26px}
+@media (max-width:1100px){
+  .g-map,.g-sched,.g-gh{grid-template-columns:1fr}
+  .g4{grid-template-columns:1fr 1fr}
+}
+@media (max-width:960px){
+  .auth{grid-template-columns:1fr}
+  .auth-side{display:none}
+  .auth-main{align-items:flex-start;padding-top:36px}
+  .auth-mobile-logo{display:flex!important}
+  .robot,.bubble{display:none}
+  .shell{grid-template-columns:1fr}
+  .side{position:fixed;left:0;top:0;width:260px;transform:translateX(-100%);transition:transform .2s}
+  .shell.menu .side{transform:none;box-shadow:0 0 40px rgba(0,0,0,.3)}
+  .shell.menu::after{content:"";position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:25}
+  .burger{display:flex}
+  .top{padding:0 16px}
+  .top .crumb{display:none}
+  .content{padding:22px 16px 80px}
+  .g-home,.g3,.g2,.g-prof,.g-cal{grid-template-columns:1fr}
+  .grid[style*="grid-template-columns"]{grid-template-columns:1fr!important}
+  .who .txt{display:none}
+  .ph{flex-wrap:wrap}
+  .ph h1{font-size:26px}
+}
+@media (max-width:600px){
+  .f2,.f3,.res-grid,.kv,.g4{grid-template-columns:1fr}
+  .mode{gap:10px}
+  .hero{padding:26px 22px}
+  .hero .deco{display:none}
+  .drop{min-height:280px}
+  .notif h3{font-size:19px} .notif p{font-size:15px}
+  .kv{padding:16px 20px}
+  .modal-h{padding:20px}
+}

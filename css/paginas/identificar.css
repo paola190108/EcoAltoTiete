@@ -1,0 +1,24 @@
+/* Página: identificar resíduo. */
+
+/* identify */
+.drop{border:2px dashed #8fbf9f;background:#e1eee5;border-radius:10px;min-height:450px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;cursor:pointer;text-align:center;transition:background .15s;position:relative}
+.drop:hover,.drop.over{background:#d5e8dc}
+.drop .i{width:46px;height:46px;color:var(--primary);stroke-width:1.5;margin-bottom:8px}
+.drop b{font-size:15px}
+.drop.small{min-height:110px}
+.drop.small .i{width:30px;height:30px;margin:0}
+.preview{width:100%;max-height:450px;object-fit:contain;border-radius:8px;background:#0e1512;display:block}
+.res-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.res-f label{font-size:12.5px;color:var(--muted);display:block;margin-bottom:3px}
+.res-f div{border:1px solid var(--line-2);background:#f6f8f6;border-radius:6px;padding:4px 8px;font-size:12px;font-weight:600;min-height:25px;text-transform:uppercase}
+.impact{border:1px solid var(--line-2);border-radius:8px;background:#f3f6f3;padding:12px 14px;position:relative}
+.impact h4{margin:0 0 8px;text-align:center;font-size:15px}
+.impact .ic{position:absolute;right:10px;top:10px;width:40px;height:40px;border-radius:6px;background:var(--mint-2);display:grid;place-items:center;color:var(--primary)}
+.impact .v{font-size:20px;font-weight:600;margin:2px 0 8px}
+.hist{border:1px solid var(--line-2);border-radius:6px;padding:10px 12px;margin-bottom:12px;font-size:11.5px}
+.hist b.t{font-size:14px;display:block}
+.hist .lab{font-weight:700;text-transform:uppercase;font-size:11px}
+.spin{width:40px;height:40px;border:4px solid var(--mint-2);border-top-color:var(--primary);border-radius:50%;animation:sp 0.8s linear infinite;margin:0 auto 14px}
+@keyframes sp{to{transform:rotate(360deg)}}
+.scan{position:absolute;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,#5ee09a,transparent);top:0;animation:scan 1.4s ease-in-out infinite;box-shadow:0 0 14px #5ee09a}
+@keyframes scan{0%{top:2%}50%{top:96%}100%{top:2%}}

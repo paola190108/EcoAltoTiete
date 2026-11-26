@@ -1,0 +1,9 @@
+/* Layout: regras de impressão (PDF/comprovantes). A formatação do PDF do relatório fica em js/paginas/gestor/relatorios.js (REPORT_CSS). */
+
+/* print */
+#print-root{display:none}
+@media print{
+  body.printing>*:not(#print-root){display:none!important}
+  body.printing #print-root{display:block}
+  #print-root{font-size:12pt}
+}

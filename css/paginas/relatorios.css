@@ -1,0 +1,18 @@
+/* Página: relatórios do gestor. */
+
+/* reports */
+.bars .b{display:grid;grid-template-columns:80px 1fr 40px;align-items:center;gap:12px;margin:18px 0;font-size:13px}
+.bars .track{height:18px;border-radius:4px;background:transparent}
+.bars .fill{height:100%;border-radius:4px;transition:width .5s}
+.fill.branca{background:#c3dccb} .fill.azul{background:#dbe9f8} .fill.verde{background:#c3e0cd} .fill.marrom{background:#e5cfb6}
+.range{width:100%;accent-color:var(--primary)}
+.toggle-row{display:flex;justify-content:space-between;align-items:center;border:1px solid var(--line);background:#f5f8f6;border-radius:6px;padding:9px 12px 9px 18px;margin-bottom:12px}
+.sw{border:0;border-radius:999px;padding:4px 14px;font-size:12px;background:var(--mint);color:#2d6b45;font-weight:500}
+.sw.off{background:#e8eae9;color:#8a928d}
+.cbx{display:flex;flex-wrap:wrap;gap:12px}
+.cbx label{display:flex;align-items:center;gap:8px;border:1px solid var(--line-2);border-radius:6px;background:#eef4f0;padding:8px 14px;min-width:100px;font-size:13px;cursor:pointer}
+.cbx input{accent-color:var(--primary)}
+.log{display:flex;gap:10px;margin-bottom:18px}
+.log .av{background:var(--mint-2);color:var(--forest);font-weight:500;width:36px;height:36px;font-size:13.5px}
+.log b{display:block;font-size:14px}
+.log small{color:var(--muted);font-size:11.5px}

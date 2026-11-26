@@ -1,0 +1,32 @@
+/* Página: agendamento de descarte. */
+
+/* scheduling */
+.mode{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-bottom:14px}
+.mode button{border:2px solid #b4bfd0;background:#f5f6f6;border-radius:6px;padding:16px 10px;min-height:96px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#9aa4b5;font-weight:700;font-size:14.5px}
+.mode button .i{width:24px;height:24px}
+.mode button.on{border-color:var(--primary);background:var(--mint-2);color:var(--text)}
+.cal-h{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.cal-h b{font-size:16px}
+.cal-nav{display:flex;gap:6px}
+.cal-nav button{width:30px;height:30px;border:1px solid var(--line-2);border-radius:6px;background:#f3f5f3;display:grid;place-items:center}
+.cal-nav .i{width:16px;height:16px}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px 2px;text-align:center}
+.cal .dw{font-size:11px;font-weight:600;color:var(--muted);padding-bottom:6px}
+.cal button{width:34px;height:34px;margin:0 auto;border-radius:50%;border:0;background:none;font-size:13px;color:var(--text)}
+.cal button:hover:not([disabled]){background:var(--mint-2)}
+.cal button[disabled]{color:#c3cac6;cursor:default}
+.cal button.today{box-shadow:inset 0 0 0 2px var(--forest);font-weight:700}
+.cal button.sel{background:var(--forest);color:#fff;font-weight:700}
+.cal button.has::after{content:"";display:block;width:4px;height:4px;border-radius:50%;background:var(--primary);margin:-2px auto 0}
+.slot{width:100%;display:flex;align-items:center;justify-content:space-between;border:1px solid var(--line);background:#f1f4f2;border-radius:6px;padding:10px 14px;margin-bottom:8px;font-size:13.5px;color:#7f8a84}
+.slot:hover:not([disabled]){border-color:var(--primary);color:var(--text)}
+.slot.on{border:2px solid var(--forest);background:var(--mint-2);color:var(--text);font-weight:700}
+.slot[disabled]{cursor:not-allowed;opacity:.75}
+.slot small{font-size:11px}
+.slot .i{width:18px;height:18px;color:var(--forest)}
+.ag{border:1px solid var(--line-2);border-radius:6px;background:#f3f6f3;padding:12px;margin-bottom:12px;font-size:13px}
+.ag .codes{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:12px}
+.ag .codes span{border:1px solid var(--primary);border-radius:6px;text-align:center;padding:5px;font-weight:700;background:#fff}
+.ag .codes span.s{background:var(--mint-2);font-weight:500;font-size:11.5px}
+.ag .codes span.s.neg{background:var(--danger-bg);border-color:var(--danger-line);color:var(--danger)}
+.ag p{margin:0 0 3px}

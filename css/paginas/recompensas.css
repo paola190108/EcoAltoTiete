@@ -1,0 +1,13 @@
+/* Página: recompensas. */
+
+/* rewards */
+.saldo{margin-left:auto;background:var(--forest);color:#fff;border-radius:8px;padding:10px 18px;display:flex;align-items:baseline;gap:6px}
+.saldo small{font-size:12px;color:#cfe0d6} .saldo b{font-size:20px}
+.vouchers{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}
+.voucher{border:1px solid var(--line-2);border-radius:6px;background:#f6f8f6;padding:14px 12px;text-align:center}
+.voucher .t{font-weight:700;font-size:13.5px;color:#1d3b30}
+.voucher .v{font-weight:800;font-size:19px;color:var(--primary);margin:6px 0}
+.voucher .s{font-size:12px;color:var(--muted);margin-bottom:10px}
+.red{border-bottom:1px solid var(--line);padding:10px 0;font-size:13px;display:flex;justify-content:space-between;gap:10px}
+.red:last-child{border:0}
+.code{font-family:ui-monospace,Consolas,monospace;background:var(--mint-3);border-radius:4px;padding:1px 6px;font-size:12px}

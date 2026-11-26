@@ -1,0 +1,31 @@
+/* Layout: telas de login/cadastro (auth) e logo mobile. */
+
+/* ---------- auth ---------- */
+.auth{display:grid;grid-template-columns:518px 1fr;min-height:100vh}
+.auth-side{background:var(--forest);color:#fff;padding:56px 48px 40px 70px;display:flex;flex-direction:column}
+.brand{display:flex;align-items:center;gap:4px}
+.brand img{width:94px;height:auto}
+.brand b{font-size:40px;font-weight:700;letter-spacing:-.01em;margin-top:24px}
+.auth-side h2{color:var(--mint);font-size:28px;line-height:1.25;margin:52px 0 0 18px;font-weight:700}
+.auth-side p{margin:28px 0 0 18px;max-width:330px;color:#dfe9e3;font-size:15px;line-height:1.6}
+.auth-side .art{margin:40px 0 0 22px;width:285px;max-width:70%}
+.auth-feats{margin-top:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center;font-size:12.5px;color:#e5eee8;margin-left:-26px}
+.auth-feats .i{width:28px;height:28px;stroke-width:1.5;color:var(--mint);margin:0 auto 10px;display:block}
+.auth-main{position:relative;display:flex;align-items:center;justify-content:center;padding:48px 24px;overflow:hidden}
+.auth-box{width:100%;max-width:420px;position:relative;z-index:2}
+.auth-box h1{text-align:center;font-size:31px;margin:0;font-weight:700;color:#1d2b24}
+.auth-box .sub{text-align:center;color:var(--muted);margin:8px 0 28px}
+.auth-box .or{text-align:center;color:var(--muted);font-size:12px;margin:14px 0}
+.back{display:inline-flex;align-items:center;gap:6px;background:none;border:0;padding:4px 0;font-size:13.5px;color:var(--text)}
+.back .i{width:16px;height:16px}
+.robot{position:absolute;right:max(3%,calc(50% - 470px));bottom:0;width:150px;z-index:1;pointer-events:none}
+.bubble{position:absolute;right:max(1%,calc(50% - 520px));bottom:200px;max-width:170px;background:var(--primary);color:#fff;border-radius:14px;padding:14px 16px;font-size:12px;line-height:1.35;z-index:1}
+.bubble.big{font-size:19px;font-weight:700;padding:16px 14px}
+.bubble:after{content:"";position:absolute;left:0;bottom:-22px;border-left:34px solid var(--primary);border-bottom:24px solid transparent}
+.demo-box{margin-top:26px;border:1px dashed var(--line-2);border-radius:10px;padding:12px 14px;font-size:12.5px;color:var(--muted);background:#fbfcfb}
+.demo-box b{color:var(--text)}
+.demo-box .row{margin-top:8px}
+
+.auth-mobile-logo{display:none;justify-content:center;align-items:center;gap:6px;margin-bottom:22px;color:var(--forest);font-weight:800;font-size:24px}
+.auth-mobile-logo span{display:grid;place-items:center;background:var(--forest);border-radius:10px;width:46px;height:46px;overflow:hidden}
+.auth-mobile-logo img{width:40px}

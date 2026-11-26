@@ -1,0 +1,18 @@
+/* Página: pontos de coleta (mapa). */
+
+/* map */
+.map{position:relative;border:1px solid var(--primary);border-radius:4px;overflow:hidden;background:#eef1ee}
+.map img{width:100%;height:auto;display:block;aspect-ratio:688/468}
+.pin{position:absolute;transform:translate(-50%,-100%);background:none;border:0;padding:0;filter:drop-shadow(0 2px 3px rgba(0,0,0,.3));transition:transform .15s}
+.pin svg{width:30px;height:30px;display:block}
+.pin:hover,.pin.on{transform:translate(-50%,-100%) scale(1.25);z-index:2}
+.pin .lbl{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);background:#fff;border:1px solid var(--line);border-radius:6px;padding:2px 7px;font-size:11px;font-weight:600;white-space:nowrap;display:none;color:var(--text)}
+.pin:hover .lbl,.pin.on .lbl{display:block}
+.pin.rt .lbl{left:auto;right:-8px;transform:none}
+.radius{position:absolute;left:3.6%;bottom:4%;background:#cfe6d6;color:#3d6a52;border-radius:4px;padding:4px 10px;font-size:11.5px}
+.eco-info h3{font-size:17px;margin-bottom:16px}
+.eco-info .k{color:var(--primary);font-weight:600}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:0 14px;font-size:13px;margin:2px 0 14px}
+.hours span:nth-child(even){color:var(--danger)}
+.eco-li{display:flex;flex-wrap:wrap;align-items:center;gap:10px;border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin-bottom:8px;background:#fff;width:100%;text-align:left}
+.eco-li:hover{border-color:var(--mint)} .eco-li.on{border-color:var(--primary);background:var(--mint-3)}

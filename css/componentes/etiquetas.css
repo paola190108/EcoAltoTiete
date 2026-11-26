@@ -1,0 +1,13 @@
+.pill{display:inline-flex;align-items:center;gap:4px;border-radius:999px;padding:3px 12px;font-size:12px;font-weight:500;border:1px solid transparent;white-space:nowrap}
+.cat-branca{background:#eef0ee;color:#3d4741;border-color:#d5dad6}
+.cat-azul{background:#e3f0fa;color:#2f6a9a;border-color:#c5def2}
+.cat-verde{background:#d8eadb;color:#2d6b45;border-color:#bcd9c3}
+.cat-marrom{background:#f3eae0;color:#8a5a33;border-color:#e6d4c0}
+.st{border-radius:6px;padding:3px 10px;font-size:12px;font-weight:500;border:1px solid}
+.st-pendente{background:var(--warn-bg);color:var(--warn);border-color:var(--warn-line)}
+.st-realizado,.st-aprovado,.st-homologado,.st-entregue,.st-confirmado{background:var(--mint-3);color:#2d6b45;border-color:#a9d1b5}
+.st-negado,.st-cancelado,.st-rejeitado{background:var(--danger-bg);color:var(--danger);border-color:var(--danger-line)}
+.chip{border:1px solid var(--line-2);background:#fff;border-radius:999px;padding:5px 16px;font-size:13px}
+.chip.on{background:var(--primary);border-color:var(--primary);color:#fff;font-weight:700}
+.chip.sq{border-radius:6px;padding:4px 13px;font-size:12.5px}
+.chip.sq.on{background:var(--forest);border-color:var(--forest)}

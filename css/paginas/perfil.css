@@ -1,0 +1,12 @@
+/* Página: perfil. */
+
+/* profile */
+.prof{text-align:center}
+.prof .bigav{width:84px;height:84px;border-radius:50%;background:var(--primary);display:grid;place-items:center;margin:8px auto 18px;color:#fff}
+.prof .bigav .i{width:38px;height:38px}
+.mini-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:34px}
+.mini-stats div{background:var(--mint-2);border-radius:6px;padding:12px}
+.mini-stats b{font-size:20px;display:block}
+.mini-stats small{font-size:12px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:0 24px}
+.f3{display:grid;grid-template-columns:repeat(3,1fr);gap:0 16px}

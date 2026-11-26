@@ -1,0 +1,10 @@
+/* Página: notificações. */
+
+/* notifications */
+.notif{background:#fff;border:1px solid var(--line);border-radius:8px;padding:20px 22px;margin-bottom:14px;position:relative;cursor:pointer}
+.notif h3{margin:0;font-size:24px;color:#183f32}
+.notif p{font-size:17px;color:#9aa19d;margin:10px 0 14px;max-width:860px}
+.notif .dot{position:absolute;top:14px;right:14px;width:15px;height:15px;border-radius:50%;background:var(--primary)}
+.notif.read{opacity:.7}
+.notif small{color:var(--faint);font-size:12px;display:block;margin-top:10px}
+.notif .btn{font-size:17px;padding:8px 40px}
